@@ -635,7 +635,7 @@ ChannelElement *ff_aac_get_che(AACDecContext *ac, int type, int elem_id)
             ac->oc[1].m4ac.ps = -1;
     }
     /* For indexed channel configurations map the channels solely based
-     * on position. */
+     * on  its position. */
     switch (ac->oc[1].m4ac.chan_config) {
     case 14:
         if (ac->tags_mapped > 2 && ((type == TYPE_CPE && elem_id < 3) ||
